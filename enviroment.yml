@@ -1,4 +1,4 @@
-name: holoviz-tutorial
+name: dashboard_thesis
 channels:
   - pyviz/label/dev
 dependencies:
