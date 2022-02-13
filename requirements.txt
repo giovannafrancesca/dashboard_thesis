@@ -1,4 +1,4 @@
-python=3.8
+python==3.8.0
 numpy
 pandas
 dask
@@ -6,14 +6,14 @@ xarray
 notebook
 matplotlib
 ipympl
-bokeh=2.3.3
+bokeh==2.3.3
 datashader
 param
 netcdf4
 fastparquet
 jupyterlab
-fsspec=0.9.0
-hvplot=0.8.0a7
-panel=0.12.0rc10
-holoviews=1.14.5a6
+fsspec==0.9.0
+hvplot==0.8.0a7
+panel==0.12.0rc10
+holoviews==1.14.5a6
 anaconda-project
