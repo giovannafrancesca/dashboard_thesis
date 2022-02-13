@@ -15,4 +15,3 @@ fsspec
 hvplot
 panel
 holoviews
-anaconda-project
