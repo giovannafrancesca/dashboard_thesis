@@ -1,0 +1,136 @@
+logo_poli=pn.pane.PNG('logo_polito.png',width=180)
+
+title=pn.panel(HTML('<p><h1><center>Interactive Dashboard on ENAC Safety Report Portal</center></h1></p>'), width=600)
+sub_title=pn.panel(('<p><h4><center>Final product of developing a python library on safety</center></h4>'),width=600)
+home_page=pn.Column(pn.Spacer(height=10),title, sub_title)
+
+
+authors=pn.panel(HTML('<p><h4>Master Thesis in Aerospace Engineering</h4>Author: Callegari Giovanna Francesca<br></p>'
+            '<p>Professor: Giorgio Guglieri<br>Supervisions: Beatrice Conti & Giuliano Antoniciello</p>'),width=600)
+expl=pn.panel(HTML('<p>The Dashboard presents the results obtained developing a python library rearding safety manners, '
+             'in particular Safety Performance Indicators and Dangerous Goods as they are dispalyed in '
+             '<a href="https://sites.google.com/enac.gov.it/enacsafetyreport/introduction?authuser=0"  target="_blank">ENAC Safety Report Portal</a>.<br>'
+             'The bulding process is explained in the related paper and the input data is provided by ENAC.</p>'),width=600)
+abstract=pn.panel(HTML('<p>....Abstarct...</p>'))
+about_page=pn.Column(pn.Spacer(height=10),authors,pn.Spacer(height=50), expl, abstract)
+
+
+
+
+title_spi=pn.panel(HTML('<p><h1><center>Safety Performance Indicators</center></h1></p>'), width=600)
+spi_descr=pn.panel(HTML('<p>Safety performance indicators are parameters that help the aviation authorities measuring the '
+             'characteristic level of safety performance of a state. They are chosen '
+             'depending on the safety data available to be analyze and they need to illustrate '
+             'the safety national objectives.<br>'
+             'SPIs are divided in two categories:<br>'
+             '<ul><li><em>Outcome oriented</em>. They derive from the measurement of events that could be '
+                'the precursors of "undesired events" (accident or serious incident) and normally '
+                'they are measured considering mandatory reports received in the eE-MOR '
+                'system. These indicators have been chosen taking into account types of events '
+                'which are particularly relevant in all the domains of civil aviation: Aerodrome, '
+                'Air Traffic Control, Airworthiness, Operations and UAS.</li>'
+                '<li><em>Process oriented</em>. They derive from the most typical processes of the Civi l'
+                'Aviation Authority and plan to measure the effectiveness of ENAC activities '
+                'trying to ensure the highest possible level of safety of the aeronautical '
+                'operations.</li></ul>'
+            'The conducted analysis considers only SPI-outcome oriented, as they are included in the Safety Portal.<br>'
+            'To learn more about the topic, consult <a href="https://www.enac.gov.it/sites/default/files/allegati/2020-Lug/Safety_Performance_Indicators_Edizione_2.pdf"  target="_blank">ENAC document</a>.</p>'),width=600)
+spi_page=pn.Column(title_spi,spi_descr)
+
+colored_col=pn.Column('\n\n',
+                     pn.Row(pn.Spacer(width=8),pn.panel(HTML('<p>Home</p>'), width=150)),
+                     pn.Spacer(height=2),
+                     pn.Row(pn.Spacer(width=8),pn.panel(HTML('<p>Safety Performance Indicators</p>'), width=150)),
+                     pn.Spacer(height=2),
+                     pn.Row(pn.Spacer(width=8),pn.panel(HTML('<p>Dangeous Goods</p>'), width=150)),
+                     pn.Spacer(height=2),
+                     pn.Row(pn.Spacer(width=8),pn.panel(HTML('<p>About</p>'), width=150)),
+                     pn.layout.VSpacer(),
+                     logo_poli, width=200, height=400 ,background='#0E7397')
+
+pag1=pn.Row(colored_col,home_page)
+pag2=pn.Row(colored_col, spi_page)
+pag4=pn.Row(colored_col,about_page)
+pag4
+
+
+
+
+logo_poli=pn.pane.PNG('logo_polito.png',width=180)
+
+title=pn.panel(HTML('<p><h1><center>Interactive Dashboard on ENAC Safety Report Portal</center></h1></p>'), width=600)
+sub_title=pn.panel(('<p><h4><center>Final product of developing a python library on safety</center></h4>'),width=600)
+home_page=pn.Column(pn.Spacer(height=10),title, sub_title)
+
+
+authors=pn.panel(HTML('<p><h4>Master Thesis in Aerospace Engineering</h4>Author: Callegari Giovanna Francesca<br></p>'
+            '<p>Professor: Giorgio Guglieri<br>Supervisions: Beatrice Conti & Giuliano Antoniciello</p>'),width=600)
+expl=pn.panel(HTML('<p>The Dashboard presents the results obtained developing a python library rearding safety manners, '
+             'in particular Safety Performance Indicators and Dangerous Goods as they are dispalyed in '
+             '<a href="https://sites.google.com/enac.gov.it/enacsafetyreport/introduction?authuser=0"  target="_blank">ENAC Safety Report Portal</a>.<br>'
+             'The bulding process is explained in the related paper and the input data is provided by ENAC.</p>'),width=600)
+abstract=pn.panel(HTML('<p>....Abstarct...</p>'))
+about_page=pn.Column(pn.Spacer(height=10),authors,pn.Spacer(height=50), expl, abstract)
+
+
+title_spi=pn.panel(HTML('<p><h1><center>Safety Performance Indicators</center></h1></p>'), width=600)
+spi_descr=pn.panel(HTML('<p>Safety performance indicators are parameters that help the aviation authorities measuring the '
+             'characteristic level of safety performance of a state. They are chosen '
+             'depending on the safety data available to be analyze and they need to illustrate '
+             'the safety national objectives.<br>'
+             'SPIs are divided in two categories:<br>'
+             '<ul><li><em>Outcome oriented</em>. They derive from the measurement of events that could be '
+                'the precursors of "undesired events" (accident or serious incident) and normally '
+                'they are measured considering mandatory reports received in the eE-MOR '
+                'system. These indicators have been chosen taking into account types of events '
+                'which are particularly relevant in all the domains of civil aviation: Aerodrome, '
+                'Air Traffic Control, Airworthiness, Operations and UAS.</li>'
+                '<li><em>Process oriented</em>. They derive from the most typical processes of the Civi l'
+                'Aviation Authority and plan to measure the effectiveness of ENAC activities '
+                'trying to ensure the highest possible level of safety of the aeronautical '
+                'operations.</li></ul>'
+            'The conducted analysis considers only SPI-outcome oriented, as they are included in the Safety Portal.<br>'
+            'To learn more about the topic, consult <a href="https://www.enac.gov.it/sites/default/files/allegati/2020-Lug/Safety_Performance_Indicators_Edizione_2.pdf"  target="_blank">ENAC document</a>.</p>'),width=600)
+spi_page=pn.Column(title_spi,spi_descr)
+
+#BUTTONs AND LINKING
+button1 = pn.widgets.Button(name='Home', background='#0E7397', width=188)
+button2 = pn.widgets.Button(name='Safety Performance Indicators', background='#0E7397',  width=180)
+button3 = pn.widgets.Button(name='Dangeous Goods', background='#0E7397',  width=188)
+button4 = pn.widgets.Button(name='About', background='#0E7397',  width=188)
+output = widgets.Output()
+
+def button_home(event):
+    if event=='home':
+            page=page.append(home_page)
+    if event=='spi':
+        with output:
+            page=page.append(spi_page)
+    if event=='dg':
+        with output:
+            page=page.append(dg_page)
+    if event=='info':
+        with output:
+            page=page.append(about_page)
+
+button1.on_click(button_home('home'))
+button2.on_click(button_home('spi'))
+button3.on_click(button_home('dg'))
+button4.on_click(button_home('info'))
+
+colored_col=pn.Column('\n\n',
+                     pn.Row(pn.Spacer(width=1),button1, width=200),
+                     pn.Spacer(height=2),
+                     pn.Row(pn.Spacer(width=1),button2, width=200),
+                     pn.Spacer(height=2),
+                      pn.Row(pn.Spacer(width=1),button3, width=200),
+                     pn.Spacer(height=2),
+                     pn.Row(pn.Spacer(width=1),button4, width=200),
+                     pn.layout.VSpacer(),
+                     logo_poli, width=220, height=400 ,background='#0E7397')
+
+pag1=pn.Row(colored_col,home_page)
+pag2=pn.Row(colored_col, spi_page)
+pag4=pn.Row(colored_col,about_page)
+page=pn.Row(colored_col)
+display(page)
