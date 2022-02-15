@@ -134,3 +134,10 @@ pag2=pn.Row(colored_col, spi_page)
 pag4=pn.Row(colored_col,about_page)
 page=pn.Row(colored_col)
 display(page)
+
+
+pn.template.FastListTemplate(
+    title="As Single Page App",
+    sidebar=[colored_col],
+    main=[home_page]
+).servable()
