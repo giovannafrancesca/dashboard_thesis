@@ -1,0 +1,3 @@
+https://discourse.holoviz.org/t/multi-page-app-documentation/3108
+
+https://panel.holoviz.org/user_guide/Templates.html
